@@ -1,0 +1,174 @@
+
+/* Genel Stil */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+  padding-left: 20px; /* Sol boşluk */
+  padding-right: 20px; /* Sağ boşluk */
+}
+
+/* Header Stili */
+header {
+  background-color: #fff;
+  color: #111;
+  padding: 20px 0;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* margin-left ve margin-right kaldırıldı */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+header h1 {
+  color: #D90429;
+  font-size: 28px;
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #D90429;
+  font-weight: bold;
+}
+
+/* Araba ve Ürün Markaları Bölümü (Sağa ve Sola Kaydırma Butonlarıyla) */
+.brands-section {
+  background-color: #f9fafb;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.brands-section h2 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.scroll-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-left: 20px; /* Butonları kenardan uzaklaştırmak için padding */
+  padding-right: 20px;
+}
+
+.brand-container {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+  max-width: 90%; /* Container boyutu ekran genişliğine göre ayarlandı */
+  margin: 0 auto; /* Ortaya hizala */
+}
+
+.brand-container::-webkit-scrollbar {
+  display: none;
+}
+
+.brand-card {
+  flex: 0 0 auto;
+  text-align: center;
+  margin: 0 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+
+.brand-card:hover {
+  transform: scale(1.05);
+}
+
+.brand-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.brand-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #1f2937;
+}
+/* Scroll Butonları */
+.scroll-button {
+  background-color: #d90429;
+  color: white;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+  position: relative;
+  z-index: 10; /* Üstte görünsün diye z-index artırıldı */
+}
+
+.scroll-button:hover {
+  background-color: #b60320;
+  transform: scale(1.1); /* Hover'da buton biraz büyütülüyor */
+}
+
+.scroll-button.left {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-button.right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-buttons {
+  position: relative;
+}
