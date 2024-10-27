@@ -8,7 +8,12 @@ import opelLogo from "../assets/opel.png";
 import hyundaiLogo from "../assets/hyundai.png";
 import kiaLogo from "../assets/kia.png";
 import citroenLogo from "../assets/citroen.png";
-import toyotaLogo from "../assets/toyota.png"; // Yanlışlık düzeltildi
+import toyotaLogo from "../assets/toyota.png"; 
+import skodaLogo from "../assets/skoda.png"; 
+import ladaLogo from "../assets/lada.png"; 
+import seatLogo from "../assets/seat.png"; 
+
+
 
 function CarBrandSection() {
   const scrollContainerRef = useRef(null); // Kaydırılacak container'ı referans alıyoruz
@@ -26,6 +31,9 @@ function CarBrandSection() {
     { name: "Fiat", img: fiatLogo },
     { name: "Tofaş", img: tofasLogo },
     { name: "Volkswagen", img: volkswagenLogo },
+    { name: "Seat", img: seatLogo },
+    { name: "Skdoa", img: skodaLogo },
+    { name: "Lada", img: ladaLogo },
     { name: "Peugeot", img: peugeotLogo },
     { name: "Citroen", img: citroenLogo },
     { name: "Opel", img: opelLogo },

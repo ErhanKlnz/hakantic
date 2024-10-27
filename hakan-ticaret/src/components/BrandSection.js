@@ -11,6 +11,8 @@ import oparLogo from "../assets/opar.png";
 import petlasLogo from "../assets/petlas.png";
 import mobilLogo from "../assets/mobil.png";
 import seleniaLogo from "../assets/selenia.png";
+import rbwLogo from "../assets/rbw.jpg";
+import mgaLogo from "../assets/mga.png";
 
 
 function BrandSection() {
@@ -31,12 +33,14 @@ function BrandSection() {
     { name: "Bosch", img: boschLogo },
     { name: "Filtron Filtre", img: filtronLogo },
     { name: "Photon Led", img: photonLogo },
+    { name: "MGA Balata", img: mgaLogo },
     { name: "Goodyear Antifiriz ", img: goodyearLogo },
     { name: "Valeo", img: valeoLogo },
     { name: "INA", img: inaLogo },
     { name: "SKF", img: skfLogo },
     { name: "Opar", img: oparLogo },
     { name: "Petlas Lastik", img: petlasLogo },
+    { name: "RBW Silecek", img: rbwLogo },
   ];
 
   return (
