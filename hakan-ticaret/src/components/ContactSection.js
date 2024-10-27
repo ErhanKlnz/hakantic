@@ -1,16 +1,26 @@
 import React from "react";
-import "./ContactSection.css"; // Stil dosyasını içe aktar
+import "./ContactSection.css";
+import mobilLogo from "../assets/mobil.png"; // Mobil1 logosunu import ediyoruz
+import locationIcon from "../assets/location-icon.png"; // Konum simgesi
+import phoneIcon from "../assets/phone-icon.png"; // Telefon simgesi
 
 function ContactSection() {
   return (
     <section id="contact" className="contact-section">
       <h2>İletişim Bilgilerimiz</h2>
       <div className="contact-grid">
+        
         {/* Adres ve Telefon Bilgisi */}
         <div className="contact-card">
           <h3>Adres & Telefon</h3>
-          <p><strong>Adres:</strong> Küçük Sanayi Sitesi 3651. Sk. No:9/B, 54300 Hendek/Sakarya</p>
-          <p><strong>Telefon:</strong> <a href="tel:+90264140554">0264 614 05 54</a></p>
+          <p>
+            <img src={locationIcon} alt="Location Icon" className="icon" />
+            <strong>Adres:</strong> Küçük Sanayi Sitesi 3651. Sk. No:9/B, 54300 Hendek/Sakarya
+          </p>
+          <p>
+            <img src={phoneIcon} alt="Phone Icon" className="icon" />
+            <strong>Telefon:</strong> <a href="tel:+90264140554">0264 614 05 54</a>
+          </p>
           <p><strong>Saatler:</strong></p>
           <ul>
             <li>Pazartesi: 09:00–19:00</li>
@@ -38,7 +48,8 @@ function ContactSection() {
         </div>
 
         {/* Mobil1 Bayisi */}
-        <div className="contact-card">
+        <div className="contact-card mobil1-card">
+          <img src={mobilLogo} alt="Mobil1 Logo" className="mobil-logo" />
           <h3>Mobil1 Bayisi</h3>
           <p>Mobil1 bayisi olduğumuzu görmek için Mobil1 resmi sitesini ziyaret edin:</p>
           <a

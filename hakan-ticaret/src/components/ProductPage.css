@@ -1,0 +1,76 @@
+.product-page {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .product-image-container {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-details {
+    flex: 2;
+  }
+  
+  .product-name {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 24px;
+    color: #D90429;
+    margin: 20px 0;
+  }
+  
+  .compatible-cars, .product-description {
+    margin-top: 20px;
+  }
+  
+  .compatible-cars h3, .product-description h3 {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .compatible-cars ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #D90429;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #b60320;
+  }
+  
+  .out-of-stock {
+    color: #888;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  

@@ -22,6 +22,7 @@
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .contact-card h3 {
@@ -45,6 +46,29 @@
   font-size: 16px;
 }
 
+/* Mobil1 Bayisi Kartı Stili */
+.mobil1-card {
+  background-color: #f7f9fc;
+  border: 2px solid #d0e2f2;
+  padding-top: 40px;
+  text-align: left;
+}
+
+.mobil-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* İkonların Stili */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* Linklerin Stili */
 .maps-link, .mobil1-link {
   background-color: #D90429;
   color: white;
@@ -62,9 +86,9 @@
 /* Sabit WhatsApp Butonu */
 .whatsapp-fixed {
   position: fixed;
-  bottom: 20px; /* Alt kenardan boşluk */
-  right: 20px; /* Sağ kenardan boşluk */
-  background-color: #25D366; /* WhatsApp yeşili */
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
   color: white;
   padding: 10px 20px;
   border-radius: 50px;
@@ -80,7 +104,7 @@
 .whatsapp-fixed img {
   width: 24px;
   height: 24px;
-  margin-right: 10px; /* İkon ile yazı arasında boşluk */
+  margin-right: 10px;
 }
 
 .whatsapp-fixed:hover {
