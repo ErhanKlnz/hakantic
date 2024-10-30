@@ -172,3 +172,14 @@ header nav ul li a:hover {
 .scroll-buttons {
   position: relative;
 }
+header nav ul li a, header nav ul li Link {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover, header nav ul li Link:hover {
+  color: #D90429;
+  font-weight: bold;
+}
