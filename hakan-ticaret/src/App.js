@@ -4,8 +4,10 @@ import Header from "./components/Header";
 import CarBrandSection from "./components/CarBrandSection";
 import BrandSection from "./components/BrandSection";
 import ContactSection from "./components/ContactSection";
-import GallerySection from "./components/GallerySection"; // Galeri bölümü eklendi
+import GallerySection from "./components/GallerySection";
 import ProductPage from "./components/ProductPage"; // Ürün sayfası bileşeni
+import PartsListPage from "./components/PartsListPage";
+import PartDetailPage from "./components/PartDetailPage";
 import "./App.css";
 
 function App() {
@@ -13,21 +15,21 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-
-        {/* Yönlendirmeler */}
         <Routes>
           <Route
             path="/"
             element={
               <>
-                <GallerySection   />
+                <GallerySection />
                 <CarBrandSection />
-                <BrandSection   />
+                <BrandSection />
                 <ContactSection />
               </>
             }
           />
-          <Route path="/parcalar" element={<ProductPage />} />
+          <Route path="/parcalar" element={<PartsListPage />} />
+          <Route path="/parcalar/:id" element={<PartDetailPage />} />
+        <Route path="/product" element={<ProductPage />} /> {/* Yeni rota */}
         </Routes>
       </div>
     </Router>

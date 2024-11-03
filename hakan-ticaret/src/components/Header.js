@@ -10,10 +10,10 @@ function Header() {
         <h1>HAKAN TİCARET</h1>
         <nav>
           <ul>
-            <li><Link to="/">Anasayfa</Link></li> {/* Ana sayfaya Link */}
-            <li><a href="#brands">Markalar</a></li> {/* Markalar bölümü */}
-            <li><a href="#contact">İletişim</a></li> {/* İletişim bölümü */}
-            <li><Link to="/parcalar">Parçalar</Link></li> {/* Parçalar sayfasına Link */}
+            <li><Link to="/">Anasayfa</Link></li>
+            <li><a href="#brands">Markalar</a></li>
+            <li><a href="#contact">İletişim</a></li>
+            <li><Link to="/parcalar">Parçalar</Link></li>
           </ul>
         </nav>
       </div>

@@ -1,0 +1,30 @@
+.parts-list-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .parts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .part-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .part-item:hover {
+    transform: scale(1.02);
+  }
+  
