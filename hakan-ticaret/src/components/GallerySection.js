@@ -1,39 +1,35 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import CarBrandSection from "./components/CarBrandSection";
-import BrandSection from "./components/BrandSection";
-import ContactSection from "./components/ContactSection";
-import GallerySection from "./components/GallerySection";
-import ProductPage from "./components/ProductPage";
-import PartsListPage from "./components/PartsListPage"; // Parçalar listeleme sayfası
-import PartDetailPage from "./components/PartDetailPage"; // Parça detay sayfası
-import "./App.css";
+import React, { useRef } from "react";
+import "./GallerySection.css"; // Stil dosyasını içe aktar
 
-function App() {
+function GallerySection() {
+  const scrollContainerRef = useRef(null);
+
+  const scrollLeft = () => {
+    scrollContainerRef.current.scrollBy({ left: -300, behavior: "smooth" }); // Sol kaydırma
+  };
+
+  const scrollRight = () => {
+    scrollContainerRef.current.scrollBy({ left: 300, behavior: "smooth" }); // Sağ kaydırma
+  };
+
   return (
-    <Router>
-      <div className="App">
-        <Header />
-        {/* Yönlendirmeler */}
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <GallerySection />
-                <CarBrandSection />
-                <BrandSection />
-                <ContactSection />
-              </>
-            }
-          />
-          <Route path="/parcalar" element={<PartsListPage />} /> {/* Parça listeleme */}
-          <Route path="/parcalar/:id" element={<PartDetailPage />} /> {/* Parça detay */}
-        </Routes>
+    <section id="gallery" className="gallery-section">
+      <h2>Mağaza Resimleri</h2>
+      <div className="scroll-buttons">
+        <button className="scroll-button left" onClick={scrollLeft}>
+          &#10094; {/* Sol ok simgesi */}
+        </button>
+        <div className="gallery-container" ref={scrollContainerRef}>
+          <img src={require("../assets/shop1.jpeg")} alt="Mağaza 1" />
+          <img src={require("../assets/shop2.jpeg")} alt="Mağaza 2" />
+          <img src={require("../assets/shop.jpg")} alt="Mağaza 3" />
+        </div>
+        <button className="scroll-button right" onClick={scrollRight}>
+          &#10095; {/* Sağ ok simgesi */}
+        </button>
       </div>
-    </Router>
+    </section>
   );
 }
 
-export default App;
+export default GallerySection;

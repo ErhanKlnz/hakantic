@@ -19,7 +19,15 @@ function ContactSection() {
           </p>
           <p>
             <img src={phoneIcon} alt="Phone Icon" className="icon" />
-            <strong>Telefon:</strong> <a href="tel:+90264140554">0264 614 05 54</a>
+            <strong>Sabit Telefon:</strong> <a href="tel:+90264140554">0264 614 05 54</a>
+          </p>
+          <p>
+            <img src={phoneIcon} alt="Phone Icon" className="icon" />
+            <strong>Telefon 1:</strong> <a href="tel:+905444547444">0544 454 74 44</a>
+          </p>
+          <p>
+            <img src={phoneIcon} alt="Phone Icon" className="icon" />
+            <strong>Telefon 2:</strong> <a href="tel:+905367356565">0536 735 65 65</a>
           </p>
           <p><strong>Saatler:</strong></p>
           <ul>
