@@ -1,7 +1,16 @@
 .part-detail-page {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 20px auto; /* Üst ve alt boşluk */
   padding: 20px;
+  background-color: #fff; /* Arka plan beyaz */
+  border-radius: 10px; /* Kart şeklinde köşeler */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+  transition: transform 0.3s ease; /* Hover animasyonu için */
+}
+
+/* Hover efekti */
+.part-detail-page:hover {
+  transform: scale(1.02); /* Hover'da hafif büyütme */
 }
 
 .part-detail-content {
@@ -10,8 +19,8 @@
 }
 
 .part-detail-image {
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
   object-fit: contain;
   border-radius: 8px;
   margin-right: 20px;
@@ -49,6 +58,7 @@
 
   .part-detail-info h1 {
     font-size: 20px;
+    margin: 5px;
   }
 
   .part-detail-info p {

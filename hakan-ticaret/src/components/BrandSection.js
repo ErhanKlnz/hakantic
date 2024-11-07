@@ -45,7 +45,7 @@ function BrandSection() {
 
   return (
     <section id="brands" className="brands-section">
-      <h2>Satışını Yaptığımız Markalar</h2>
+      <h2>Satışını Yaptığımız Bazı Markalar</h2>
       <div className="scroll-buttons">
         <button className="scroll-button left" onClick={scrollLeft}>
           &#10094; {/* Sol ok simgesi */}

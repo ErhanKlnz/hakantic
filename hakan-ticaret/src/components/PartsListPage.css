@@ -50,7 +50,7 @@
 @media (max-width: 768px) {
   .part-item {
     flex-direction: column; /* Kartları dikey hizala */
-    text-align: center;
+    text-align: left;
   }
 
   .part-image {
