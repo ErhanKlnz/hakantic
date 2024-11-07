@@ -34,6 +34,22 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
   }
+  /* Tablet ve Telefon için Uyarlama */
+@media (max-width: 768px) {
+  .gallery-section h2 {
+    font-size: 22px;
+  }
+
+  .gallery-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    width: 100%;
+  }
+}
   
   .scroll-button {
     background-color: #d90429;

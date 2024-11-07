@@ -23,7 +23,6 @@ function App() {
                 <GallerySection />
                 <CarBrandSection />
                 <BrandSection />
-                <ContactSection />
               </>
             }
           />
@@ -31,7 +30,18 @@ function App() {
           <Route path="/parcalar/:id" element={<PartDetailPage />} />
         <Route path="/product" element={<ProductPage />} /> {/* Yeni rota */}
         </Routes>
-      </div>
+        <ContactSection />
+        </div>
+ {/* Sabit WhatsApp butonu */}
+ <a
+        href="https://wa.me/905444547444"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsapp-fixed"
+      >
+        <img src={require("./assets/whatsapp-icon.png")} alt="WhatsApp Icon" />
+        Bizimle İletişime Geçin
+      </a>
     </Router>
   );
 }

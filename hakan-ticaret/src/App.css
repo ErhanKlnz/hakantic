@@ -9,6 +9,18 @@ body {
   padding-left: 20px; /* Sol boşluk */
   padding-right: 20px; /* Sağ boşluk */
 }
+/* Genel Sıfırlama */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 /* Header Stili */
 header {

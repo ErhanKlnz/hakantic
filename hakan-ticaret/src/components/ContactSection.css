@@ -1,29 +1,44 @@
 .contact-section {
-  background-color: #f3f4f6;
-  padding: 40px;
-  text-align: left;
-}
-
-.contact-section h2 {
-  color: #D90429;
-  font-size: 32px;
-  margin-bottom: 40px;
+  padding: 50px 20px;
+  background-color: #f9fafb;
   text-align: center;
 }
 
+.contact-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
 .contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .contact-card {
   background-color: white;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  flex: 1 1 300px;
+  text-align: left;
 }
+
+/* Tablet ve Telefon için Uyarlama */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 30px;
+  }
+
+  .contact-card {
+    max-width: 100%;
+    flex: 1 1 100%;
+  }
+}
+
+
 
 .contact-card h3 {
   color: #D90429;
@@ -110,3 +125,17 @@
 .whatsapp-fixed:hover {
   background-color: #1da354;
 }
+
+/* Küçük ekranlarda daha küçük buton boyutları */
+@media (max-width: 768px) {
+  .whatsapp-fixed {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .whatsapp-fixed img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
