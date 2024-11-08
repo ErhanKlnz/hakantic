@@ -12,11 +12,8 @@ function ContactSection() {
         
         {/* Adres ve Telefon Bilgisi */}
         <div className="contact-card">
-          <h3>Adres & Telefon</h3>
-          <p>
-            <img src={locationIcon} alt="Location Icon" className="icon" />
-            <strong>Adres:</strong> Küçük Sanayi Sitesi 3651. Sk. No:9/B, 54300 Hendek/Sakarya
-          </p>
+          <h3>Telefon</h3>
+          
           <p>
             <img src={phoneIcon} alt="Phone Icon" className="icon" />
             <strong>Sabit Telefon:</strong> <a href="tel:+90264140554">0264 614 05 54</a>
@@ -29,7 +26,7 @@ function ContactSection() {
             <img src={phoneIcon} alt="Phone Icon" className="icon" />
             <strong>Telefon 2:</strong> <a href="tel:+905367356565">0536 735 65 65</a>
           </p>
-          <p><strong>Saatler:</strong></p>
+          <p><strong>Çalışma Saatleri:</strong></p>
           <ul>
             <li>Pazartesi: 09:00–19:00</li>
             <li>Salı: 09:00–19:00</li>
@@ -43,7 +40,11 @@ function ContactSection() {
 
         {/* Google Maps */}
         <div className="contact-card">
-          <h3>Konum</h3>
+          <h3>Adres &  Konum</h3>
+          <p>
+            <img src={locationIcon} alt="Location Icon" className="icon" />
+            <strong>Adres:</strong> Küçük Sanayi Sitesi 3651. Sk. No:9/B, 54300 Hendek/Sakarya
+          </p>
           <p>Mağazamızın konumunu görmek için Google Maps'i ziyaret edin:</p>
           <a
             href="https://maps.app.goo.gl/7cMRNscj6GEgitXh7"

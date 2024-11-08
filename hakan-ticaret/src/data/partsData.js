@@ -3,6 +3,8 @@ import filters from "../assets/Filters.png"; // Mobil1 logosunu import ediyoruza
 import absorber from "../assets/absorber.jpg"; // Mobil1 logosunu import ediyoruz
 import led from "../assets/photon.png"; // Mobil1 logosunu import ediyoruz
 import triger from "../assets/triger.png"; // Mobil1 logosunu import ediyoruz
+import paspas from "../assets/set_profesyonel.png"; // Mobil1 logosunu import ediyoruz
+
 
 
 
@@ -30,7 +32,7 @@ const partsData  = [
       partNumber: "11223PSS",
       price: "Bilgi İçin Arayınız",
       description: "Her binek araca uygun, universal paspaslarımız stoklarımızda mevcuttur. Araç iç mekanınızın temizliğini ve estetiğini korumak için idealdir.",
-      image: "/images/paspas.jpg"
+      image: paspas
     },
     {
       id: 4,
