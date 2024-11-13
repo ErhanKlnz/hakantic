@@ -1,103 +1,104 @@
 /* Genel Header Stili */
 .header {
-    background-color: #fff;
-    color: #111;
-    padding: 20px 0;
-    border-bottom: 2px solid #e5e7eb;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%; /* Tam genişlik */
-    margin: 0; /* Kenar boşluklarını kaldır */
-  }
-  
-  .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box; /* Paddingler toplam genişliği etkilemesin */
-  }
-  
-  .logo {
-    width: 120px;
-    height: auto;
-  }
-  
-  .header h1 {
-    color: #D90429;
-    font-size: 24px;
-    margin: 0;
-  }
-  
+  background-color: #fff;
+  color: #111;
+  padding: 20px 0;
+  border-bottom: 2px solid #e5e7eb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.header h1 {
+  color: #D90429;
+  font-size: 24px;
+  margin: 0;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Masaüstü için Menü Varsayılan Durumu */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  width: auto;
+  opacity: 1; /* Masaüstünde menüyü görünür yap */
+  transform: translateY(0); /* Masaüstünde başlangıçta görünür */
+  pointer-events: auto;
+  position: relative; /* Masaüstü görünümde sabit kalacak */
+}
+
+/* Mobil için Menü Kapalı Varsayılan */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    position: absolute;
+    top: 100%; /* Header’ın hemen altında olacak */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column; /* Menüyü dikey sırala */
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Başlangıçta gizli */
+    transform: translateY(-20px); /* Yukarıda gizli */
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Animasyon */
   }
-  
-  .nav-links ul {
-    display: flex;
-    gap: 20px;
+
+  /* Mobilde Menü Açıldığında */
+  .nav-links.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
   }
-  
-  .nav-links li a {
-    color: #111;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links li a:hover {
-    color: #D90429;
-    font-weight: bold;
-  }
-  
-  /* Mobil için Hamburger Menü */
+
+  /* Hamburger Menü Göster */
   .menu-icon {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
+    display: block;
   }
-  
-  /* Tablet ve Telefon için Uyarlama */
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: row;
-    }
-  
-    .menu-icon {
-      display: block;
-    }
-  
-    .nav-links {
-      position: absolute;
-      top: 70px;
-      right: 0;
-      width: 100%;
-      background-color: #fff;
-      flex-direction: column;
-      align-items: center;
-      gap: 15px;
-      display: none;
-    }
-  
-    .nav-links.open {
-      display: flex;
-      padding: 20px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-top: 1px solid #e5e7eb;
-    }
-  
-    .nav-links ul {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .nav-links li a {
-      font-size: 16px;
-    }
+
+  /* Menü Linkleri Dikey */
+  .nav-links ul {
+    flex-direction: column; /* Mobilde menü linklerini dikey hizala */
+    gap: 15px;
   }
-  
+}
+
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #D90429;
+  font-weight: bold;
+}
