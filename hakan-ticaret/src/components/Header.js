@@ -11,27 +11,28 @@ function Header() {
   };
 
   return (
-    <header className="header">
-      <div className="header-content">
-        <img src={logo} alt="Hakan Ticaret Logo" className="logo" />
-        <h1>HAKAN TİCARET</h1>
-        
-        {/* Hamburger ikonu (Mobil) */}
-        <div className="menu-icon" onClick={toggleMenu}>
-          ☰
-        </div>
-      </div>
+<header className="header">
+  <div className="header-content">
+    <img src={logo} alt="Hakan Ticaret Logo" className="logo" />
+    <h1 className="header-title">HAKAN TİCARET</h1>
+    
+    {/* Hamburger ikonu (Mobil) */}
+    <div className="menu-icon" onClick={toggleMenu}>
+      ☰
+    </div>
 
-      {/* Menü öğeleri */}
-      <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-        <ul>
-          <li><Link to="/" onClick={toggleMenu}>Anasayfa</Link></li>
-          <li><a href="#brands" onClick={toggleMenu}>Markalar</a></li>
-          <li><a href="#contact" onClick={toggleMenu}>İletişim</a></li>
-          <li><Link to="/parcalar" onClick={toggleMenu}>Parçalar</Link></li>
-        </ul>
-      </nav>
-    </header>
+    {/* Menü öğeleri */}
+    <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+      <ul>
+        <li><Link to="/" onClick={toggleMenu}>Anasayfa</Link></li>
+        <li><a href="#brands" onClick={toggleMenu}>Markalar</a></li>
+        <li><a href="#contact" onClick={toggleMenu}>İletişim</a></li>
+        <li><Link to="/parcalar" onClick={toggleMenu}>Parçalar</Link></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
   );
 }
 

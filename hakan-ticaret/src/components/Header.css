@@ -11,45 +11,63 @@
   width: 100%;
 }
 
+/* Header içeriği */
 .header-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: center; /* Dikeyde ortalama */
+  justify-content: space-between; /* Sağ ve sol içeriği ayırma */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  width: 100%;
 }
 
+/* Logo */
 .logo {
   width: 120px;
   height: auto;
+  margin-right: 20px;
 }
 
-.header h1 {
+/* Ortadaki başlık */
+.header-title {
   color: #D90429;
   font-size: 24px;
+  font-weight: bold;
   margin: 0;
+  margin-right: auto;
 }
 
+/* Menü ikonu (Mobil) */
 .menu-icon {
   display: none;
   font-size: 28px;
   cursor: pointer;
 }
 
-/* Masaüstü için Menü Varsayılan Durumu */
+/* Menü linkleri */
 .nav-links {
   display: flex;
-  justify-content: center;
   list-style: none;
-  width: auto;
-  opacity: 1; /* Masaüstünde menüyü görünür yap */
-  transform: translateY(0); /* Masaüstünde başlangıçta görünür */
-  pointer-events: auto;
-  position: relative; /* Masaüstü görünümde sabit kalacak */
+  margin-left: auto; /* Menü sağa yaslanır */
 }
 
-/* Mobil için Menü Kapalı Varsayılan */
+.nav-links li {
+  margin: 0 10px;
+}
+
+.nav-links li a {
+  color: #111;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #D90429;
+  font-weight: bold;
+}
+
+/* Mobil görünüm */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
@@ -85,20 +103,4 @@
     flex-direction: column; /* Mobilde menü linklerini dikey hizala */
     gap: 15px;
   }
-}
-
-.nav-links li {
-  margin: 0 10px;
-}
-
-.nav-links li a {
-  color: #111;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav-links li a:hover {
-  color: #D90429;
-  font-weight: bold;
 }
