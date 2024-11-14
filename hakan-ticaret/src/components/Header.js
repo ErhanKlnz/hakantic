@@ -26,8 +26,9 @@ function Header() {
       <ul>
         <li><Link to="/" onClick={toggleMenu}>Anasayfa</Link></li>
         <li><a href="#brands" onClick={toggleMenu}>Markalar</a></li>
-        <li><a href="#contact" onClick={toggleMenu}>İletişim</a></li>
         <li><Link to="/parcalar" onClick={toggleMenu}>Parçalar</Link></li>
+        <li><a href="#contact" onClick={toggleMenu}>İletişim</a></li>
+
       </ul>
     </nav>
   </div>

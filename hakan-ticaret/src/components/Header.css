@@ -30,11 +30,12 @@
 
 /* Ortadaki başlık */
 .header-title {
+  flex: 1;
+  text-align: center;
   color: #D90429;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  margin-right: auto;
 }
 
 /* Menü ikonu (Mobil) */
