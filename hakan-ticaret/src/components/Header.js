@@ -48,13 +48,13 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/about"
-                onClick={toggleMenu}
-                className={({ isActive }) => (isActive ? "active-link" : "")}
+              {/* Hash navigation */}
+              <button
+                onClick={() => handleScrollToSection("#about")}
+                className="link-button"
               >
                 Hakkımızda
-              </NavLink>
+              </button>
             </li>
             <li>
               {/* Hash navigation */}

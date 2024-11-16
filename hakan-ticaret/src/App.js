@@ -32,7 +32,6 @@ function App() {
           <Route path="/parcalar" element={<PartsListPage />} />
           <Route path="/parcalar/:id" element={<PartDetailPage />} />
           <Route path="/GallerySection" element={<GallerySection />} />
-          <Route path="/about" element={<About />} />
           <Route path="/product" element={<ProductPage />} /> {/* Yeni rota */}
         </Routes>
         <ContactSection />
