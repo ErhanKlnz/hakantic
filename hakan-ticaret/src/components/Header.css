@@ -51,6 +51,28 @@
   list-style: none;
   margin-left: auto; /* Menü sağa yaslanır */
 }
+/* Aktif Link (NavLink) Stili */
+.nav-links .active-link {
+  color: #D90429; /* Aktif olan linkin rengi */
+  font-weight: bold;
+  text-decoration: underline;
+}
+/* Link butonlar için */
+.link-button {
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 18px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: inherit;
+}
+
+.link-button:hover {
+  color: #D90429;
+  font-weight: bold;
+}
 
 .nav-links li {
   margin: 0 10px;

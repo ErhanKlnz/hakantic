@@ -8,6 +8,8 @@ import GallerySection from "./components/GallerySection";
 import ProductPage from "./components/ProductPage"; // Ürün sayfası bileşeni
 import PartsListPage from "./components/PartsListPage";
 import PartDetailPage from "./components/PartDetailPage";
+import About from "./components/About"; // Hakkımızda bileşeni
+
 import "./App.css";
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
             element={
               <>
                 <GallerySection />
+                <About /> {/* Hakkımızda bölümü */}
                 <CarBrandSection />
                 <BrandSection />
               </>
@@ -28,7 +31,9 @@ function App() {
           />
           <Route path="/parcalar" element={<PartsListPage />} />
           <Route path="/parcalar/:id" element={<PartDetailPage />} />
-        <Route path="/product" element={<ProductPage />} /> {/* Yeni rota */}
+          <Route path="/GallerySection" element={<GallerySection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/product" element={<ProductPage />} /> {/* Yeni rota */}
         </Routes>
         <ContactSection />
         </div>

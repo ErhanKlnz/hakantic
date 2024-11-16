@@ -1,0 +1,86 @@
+/* Genel Hakkımızda Bölümü */
+.about-section {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    border-top: 2px solid #e5e7eb;
+    border-bottom: 2px solid #e5e7eb;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Mobilde alt alta gelmesi için */
+  }
+  
+  /* Hakkımızda Metin Alanı */
+  .about-text {
+    flex: 1;
+    padding: 20px;
+    color: #111;
+  }
+  
+  .about-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #D90429;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .about-description.highlight {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Hakkımızda Görsel Alanı */
+  .about-image-container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobil Görünüm */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column; /* Mobilde dikey hizala */
+    }
+  
+    .about-title {
+      font-size: 28px;
+      text-align: center;
+    }
+  
+    .about-description {
+      font-size: 16px;
+      text-align: center;
+    }
+    /* Mobil Görünüm */
+@media (max-width: 768px) {
+    .about-title {
+      font-size: 28px;
+    }
+  
+    .about-description {
+      font-size: 16px;
+    }
+  }
+}  
