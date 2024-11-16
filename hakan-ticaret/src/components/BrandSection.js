@@ -27,7 +27,7 @@ function BrandSection() {
   };
 
   const brands = [
-    { name: "Mobil 1 Motor Yağı - Bayisi", img: mobilLogo },
+    { name: "Mobil1 Yetkili Satış Bayisi", img: mobilLogo },
     { name: "Selenia Motor Yağı", img: seleniaLogo },
     { name: "Würth", img: wurthLogo },
     { name: "Bosch", img: boschLogo },

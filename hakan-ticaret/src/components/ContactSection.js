@@ -59,7 +59,7 @@ function ContactSection() {
         {/* Mobil1 Bayisi */}
         <div className="contact-card mobil1-card">
           <img src={mobilLogo} alt="Mobil1 Logo" className="mobil-logo" />
-          <h3>Mobil1 Bayisi</h3>
+          <h3>Mobil1 Yetkili Satış Bayisi</h3>
           <p>Mobil1 bayisi olduğumuzu görmek için Mobil1 resmi sitesini ziyaret edin:</p>
           <a
             href="https://www.mobiloil.com.tr/tr-tr/where-to-buy/sakarya-hakanticaretbehicekilnaz-0fec9d1e-f502-42d2-baeb-ccfcaed166c2"
