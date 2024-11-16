@@ -1,9 +1,10 @@
-import mgaLogo from "../assets/mga.png"; // Mobil1 logosunu import ediyoruz
-import filters from "../assets/Filters.png"; // Mobil1 logosunu import ediyoruzabsorber.jpg
-import absorber from "../assets/absorber.jpg"; // Mobil1 logosunu import ediyoruz
-import led from "../assets/photon.png"; // Mobil1 logosunu import ediyoruz
-import triger from "../assets/triger.png"; // Mobil1 logosunu import ediyoruz
-import paspas from "../assets/set_profesyonel.png"; // Mobil1 logosunu import ediyoruz
+import mgaLogo from "../assets/mga.png"; 
+import filters from "../assets/Filters.png"; 
+import absorber from "../assets/absorber.jpg"; 
+import led from "../assets/photon.png"; 
+import triger from "../assets/triger.png"; 
+import paspas from "../assets/set_profesyonel.png"; 
+import waterpump from "../assets/waterpump.jpg"; 
 
 
 
@@ -55,7 +56,16 @@ const partsData  = [
         name: "Triger Setleri",
         partNumber: "12345TRI",
         price: "Bilgi İçin Arayınız",
-        description: "Bosch, Dayco, Continental, Mais, PSA ve INA gibi önde gelen markaların triger setleri stoklarımızda bulunmaktadır. Ayrıca, stoklarımızda olmayan ürünler için sipariş verebilir ve aynı gün içinde temin edebiliriz. Aracınızın motor performansını korumak ve güvenli sürüş sağlamak için yüksek kaliteli triger setlerimizi tercih edebilirsiniz.",        image: triger
+        description: "Bosch, Dayco, Continental, Mais, PSA ve INA gibi önde gelen markaların triger setleri stoklarımızda bulunmaktadır. Ayrıca, stoklarımızda olmayan ürünler için sipariş verebilir ve aynı gün içinde temin edebiliriz. Aracınızın motor performansını korumak ve güvenli sürüş sağlamak için yüksek kaliteli triger setlerimizi tercih edebilirsiniz.",        
+        image: triger
+      },
+      {
+        id: 7,
+        name: "Devirdaim Pompası",
+        partNumber: "12345DEV",
+        price: "Bilgi İçin Arayınız",
+        description: "Bosch, Dayco, Continental, Mais, PSA ve INA gibi önde gelen markaların triger setleri stoklarımızda bulunmaktadır. Ayrıca, stoklarımızda olmayan ürünler için sipariş verebilir ve aynı gün içinde temin edebiliriz. Aracınızın motor performansını korumak ve güvenli sürüş sağlamak için yüksek kaliteli triger setlerimizi tercih edebilirsiniz.",        
+        image: waterpump
       }
   ];
   export default partsData;
