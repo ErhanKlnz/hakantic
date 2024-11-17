@@ -5,6 +5,7 @@ import led from "../assets/photon.png";
 import triger from "../assets/triger.png"; 
 import paspas from "../assets/set_profesyonel.png"; 
 import waterpump from "../assets/waterpump.jpg"; 
+import boschakü from "../assets/boschakü.jpg"; 
 
 
 
@@ -64,8 +65,17 @@ const partsData  = [
         name: "Devirdaim Pompası",
         partNumber: "12345DEV",
         price: "Bilgi İçin Arayınız",
-        description: "Bosch, Dayco, Continental, Mais, PSA ve INA gibi önde gelen markaların triger setleri stoklarımızda bulunmaktadır. Ayrıca, stoklarımızda olmayan ürünler için sipariş verebilir ve aynı gün içinde temin edebiliriz. Aracınızın motor performansını korumak ve güvenli sürüş sağlamak için yüksek kaliteli triger setlerimizi tercih edebilirsiniz.",        
+        description: "En kaliteli ve orijinal devirdaim pompalarını sizlere sunuyoruz. Ürünlerimiz, aracınızın soğutma sisteminin verimli çalışmasını sağlamak için ideal bir tercihtir.",
         image: waterpump
+      },
+      {
+        id: 8,
+        name: "Akü",
+        partNumber: "12345AKU",
+        price: "Bilgi İçin Arayınız",
+        description: "Bosch ve Çelik gibi markaların yüksek kaliteli akülerini satışa sunuyoruz. Ayrıca, akü takma işlemini hızlı ve güvenilir bir şekilde gerçekleştiriyoruz.",
+        image: boschakü
       }
+      
   ];
   export default partsData;
