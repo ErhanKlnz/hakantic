@@ -5,7 +5,7 @@ import led from "../assets/photon.png";
 import triger from "../assets/triger.png"; 
 import paspas from "../assets/set_profesyonel.png"; 
 import waterpump from "../assets/waterpump.jpg"; 
-import boschakü from "../assets/boschakü.jpg"; 
+import boschak from "../assets/boschak.jpg"; 
 
 
 
@@ -74,7 +74,7 @@ const partsData  = [
         partNumber: "12345AKU",
         price: "Bilgi İçin Arayınız",
         description: "Bosch ve Çelik gibi markaların yüksek kaliteli akülerini satışa sunuyoruz. Ayrıca, akü takma işlemini hızlı ve güvenilir bir şekilde gerçekleştiriyoruz.",
-        image: boschakü
+        image: boschak
       }
       
   ];
